@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>管理中心</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
+        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+        <link href="css/AdminLTE.css" rel="stylesheet" />
+    </head>
+    <body class="skin-blue fixed">
+        <header class="header">
+            <a href="admin" class="logo">管理中心</a>
+            <nav class="navbar navbar-static-top" role="navigation">
+                <a href="#" class="navbar-btn sidebar-toggle" data-toggle="offcanvas" role="button">
+                    <span class="sr-only">显隐菜单</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+                <div class="navbar-right">
+                    <ul class="nav navbar-nav">
+                        <!-- <li><a href="#">系统设置</a></li> -->
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <i class="glyphicon glyphicon-user"></i>
+                               	 管理员 <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">账号设置</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">退出</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <div class="wrapper">
+            <aside class="left-side sidebar-offcanvas">
+                <section class="sidebar">
+                    <ul class="sidebar-menu">
+                        <li class="treeview">
+                            <a href="#">
+                                <i class="fa fa-user"></i> 
+                                <span>用户管理</span>
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </a>
+                            <ul class="treeview-menu">
+                                <li>
+                                    <a href="#"><i class="fa fa-angle-double-right"></i> 个人信息</a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-angle-double-right"></i> 公司信息</a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-angle-double-right"></i> 机构信息</a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-angle-double-right"></i> 信用额度</a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-angle-double-right"></i> 认证审核列表</a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-angle-double-right"></i> 个人认证信息</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="treeview">
+                            <a href="#">
+                                <i class="fa fa-file-text"></i>
+                                <span>借款管理</span>
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </a>
+                            <ul class="treeview-menu">
+                                <li>
+                                    <a href="#"><i class="fa fa-angle-double-right"></i> 借款意向</a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-angle-double-right"></i> 借款列表</a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-angle-double-right"></i> 待审核</a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-angle-double-right"></i> 待发布</a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-angle-double-right"></i> 借款中</a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-angle-double-right"></i> 待放款</a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-angle-double-right"></i> 还款中</a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-angle-double-right"></i> 已逾期</a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-angle-double-right"></i> 已垫付</a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-angle-double-right"></i> 已结清</a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-angle-double-right"></i> 已流标</a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-angle-double-right"></i> 已作废</a>
+                                </li>
+                                
+                            </ul>
+                        </li>
+
+                        <li class="treeview">
+                            <a href="#">
+                                <i class="fa fa-file-text"></i>
+                                <span>债权管理</span>
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </a>
+                            <ul class="treeview-menu">
+                                <li>
+                                    <a href="#"><i class="fa fa-angle-double-right"></i> 债权列表</a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-angle-double-right"></i> 转让中的债权</a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-angle-double-right"></i> 已转让的债权</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="treeview">
+                            <a href="#">
+                                <i class="fa fa-th-list"></i>
+                                <span>理财管理</span>
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </a>
+                            <ul class="treeview-menu">
+                                <li>
+                                    <a href="productlist.html"><i class="fa fa-angle-double-right"></i> 理财产品</a>
+                                </li>
+                                <li>
+                                    <a href="planlist.html"><i class="fa fa-angle-double-right"></i> 理财计划</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="treeview">
+                            <a href="#">
+                                <i class="fa fa-usd"></i>
+                                <span>资金管理</span>
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </a>
+                            <ul class="treeview-menu">
+                                <li>
+                                    <a href="#"><i class="fa fa-angle-double-right"></i> 账户管理</a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-angle-double-right"></i> 用户记录</a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-angle-double-right"></i> 平台记录</a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-angle-double-right"></i> 充值管理</a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-angle-double-right"></i> 提现管理</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="treeview">
+                            <a href="#">
+                                <i class="fa fa-tasks"></i>
+                                <span>贷后管理</span>
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </a>
+                            <ul class="treeview-menu">
+                               <li>
+                                    <a href="#"><i class="fa fa-angle-double-right"></i> 30天内待还</a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-angle-double-right"></i> 逾期列表</a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-angle-double-right"></i> 催收记录</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="treeview">
+                            <a href="#">
+                                <i class="fa fa-bar-chart-o"></i>
+                                <span>统计管理</span>
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </a>
+                            <ul class="treeview-menu">
+                                <li>
+                                    <a href="#"><i class="fa fa-angle-double-right"></i> 资金统计</a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-angle-double-right"></i> 业务统计</a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-angle-double-right"></i> 用户统计</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="treeview">
+                            <a href="#">
+                                <i class="fa fa-list-alt"></i> <span>运营管理</span>
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </a>
+                            <ul class="treeview-menu">
+                               <li>
+                                    <a href="#"><i class="fa fa-angle-double-right"></i> 文章管理</a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-angle-double-right"></i> 广告管理</a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-angle-double-right"></i> 友链设置</a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-angle-double-right"></i> 消息管理</a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-angle-double-right"></i> 活动推广</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="treeview">
+                            <a href="#">
+                                <i class="fa fa-wrench"></i> <span>系统管理</span>
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </a>
+                            <ul class="treeview-menu">
+                               <li>
+                                    <a href="#"><i class="fa fa-angle-double-right"></i> 账号管理</a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-angle-double-right"></i> 角色管理</a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-angle-double-right"></i> 基本设置</a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-angle-double-right"></i> 业务设置</a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-angle-double-right"></i> 模版管理</a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-angle-double-right"></i> 日志管理</a>
+                                </li>
+                                
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+            </aside>
+
+            <aside class="right-side">
+                <section class="content-header">
+                    <ol class="breadcrumb">
+                        <li>用户管理</li>
+                        <li>个人信息</li>
+                    </ol>
+                </section>
+
+                <section class="content">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="box box-solid">
+                                <div class="box-header">
+                                    <div class="box-tools">
+                                        <a class="btn btn-default btn-sm" href="userAdd.html" >
+                                            <i class="fa fa-plus"></i> 新增
+                                        </a>
+                                        <button type="button" class="btn btn-default btn-sm">
+                                            <i class="fa fa-refresh"></i> 刷新
+                                        </button>
+                                        <button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#myModal">
+                                            <i class="fa fa-search"></i> 高级查询
+                                        </button>
+                                        <button type="button" class="btn btn-default btn-sm">
+                                            <i class="fa fa-share"></i> 导出
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="box-body">
+                                    <table class="table table-bordered">
+                                        <tbody>
+                                        <tr>
+                                            <th>编号</th>
+                                            <th>用户名</th>
+                                            <th>姓名</th>
+                                            <th>身份证号</th>
+                                            <th>手机号</th>
+                                            <th>邮箱</th>
+                                            <th>状态</th>
+                                            <th>操作</th>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>zdfdfs</td>
+                                            <td>张三</td>
+                                            <td>110123132131321321</td>
+                                            <td>13212345678</td>
+                                            <td>123@123.com</td>
+                                            <td>正常</td>
+                                            <td>
+                                                <a href="userDetail.html" title="查看"><i class="fa fa-eye"></i></a> / 
+                                                <a href="userEdit.html" title="修改"><i class="fa fa-pencil"></i></a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>zdfdfs</td>
+                                            <td>张三</td>
+                                            <td>110123132131321321</td>
+                                            <td>13212345678</td>
+                                            <td>123@123.com</td>
+                                            <td>锁定</td>
+                                            <td>
+                                                <a href="userDetail.html" title="查看"><i class="fa fa-eye"></i></a> / 
+                                                <a href="userEdit.html" title="修改"><i class="fa fa-pencil"></i></a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>zdfdfs</td>
+                                            <td>张三</td>
+                                            <td>110123132131321321</td>
+                                            <td>13212345678</td>
+                                            <td>123@123.com</td>
+                                            <td>正常</td>
+                                            <td>
+                                                <a href="userDetail.html" title="查看"><i class="fa fa-eye"></i></a> / 
+                                                <a href="userEdit.html" title="修改"><i class="fa fa-pencil"></i></a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>zdfdfs</td>
+                                            <td>张三</td>
+                                            <td>110123132131321321</td>
+                                            <td>13212345678</td>
+                                            <td>123@123.com</td>
+                                            <td>锁定</td>
+                                            <td>
+                                                <a href="userDetail.html" title="查看"><i class="fa fa-eye"></i></a> / 
+                                                <a href="userEdit.html" title="修改"><i class="fa fa-pencil"></i></a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>zdfdfs</td>
+                                            <td>张三</td>
+                                            <td>110123132131321321</td>
+                                            <td>13212345678</td>
+                                            <td>123@123.com</td>
+                                            <td>正常</td>
+                                            <td>
+                                                <a href="userDetail.html" title="查看"><i class="fa fa-eye"></i></a> / 
+                                                <a href="userEdit.html" title="修改"><i class="fa fa-pencil"></i></a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>zdfdfs</td>
+                                            <td>张三</td>
+                                            <td>110123132131321321</td>
+                                            <td>13212345678</td>
+                                            <td>123@123.com</td>
+                                            <td>锁定</td>
+                                            <td>
+                                                <a href="userDetail.html" title="查看"><i class="fa fa-eye"></i></a> / 
+                                                <a href="userEdit.html" title="修改"><i class="fa fa-pencil"></i></a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>zdfdfs</td>
+                                            <td>张三</td>
+                                            <td>110123132131321321</td>
+                                            <td>13212345678</td>
+                                            <td>123@123.com</td>
+                                            <td>正常</td>
+                                            <td>
+                                                <a href="userDetail.html" title="查看"><i class="fa fa-eye"></i></a> / 
+                                                <a href="userEdit.html" title="修改"><i class="fa fa-pencil"></i></a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>zdfdfs</td>
+                                            <td>张三</td>
+                                            <td>110123132131321321</td>
+                                            <td>13212345678</td>
+                                            <td>123@123.com</td>
+                                            <td>锁定</td>
+                                            <td>
+                                                <a href="userDetail.html" title="查看"><i class="fa fa-eye"></i></a> / 
+                                                <a href="userEdit.html" title="修改"><i class="fa fa-pencil"></i></a>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="box-footer clearfix">
+                                    <ul class="pagination pagination-sm no-margin pull-right">
+                                        <li><a href="#">«</a></li>
+                                        <li><a href="#">1</a></li>
+                                        <li><a href="#">2</a></li>
+                                        <li><a href="#">3</a></li>
+                                        <li><a href="#">»</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </aside>
+        </div>
+
+        <script src="vendor/jquery/jquery.min.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+        <script src="js/AdminLTE/app.js"></script>
+    </body>
+</html>
